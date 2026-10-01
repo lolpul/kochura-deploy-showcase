@@ -62,7 +62,8 @@ No application source, deployment configuration, internal endpoints, operational
 ## Links
 
 - [Public beta landing page](https://deploy.kochura.com) — product information and an application form, not a self-service deployment console.
-- Portfolio case study: pending website publication; planned route `/work/kochura-deploy`.
+- [Portfolio](https://elisey.kochura.com).
+- [Portfolio case study](https://elisey.kochura.com/work/kochura-deploy).
 - [Elisey Kochura on GitHub](https://github.com/lolpul).
 
 *Documentation reviewed: 1 October 2026.*
