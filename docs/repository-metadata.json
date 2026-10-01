@@ -1,0 +1,13 @@
+{
+  "description": "Public engineering overview of Kochura Deploy: a beta website/API for a planned deployment platform for bots and small applications.",
+  "homepage": "https://elisey.kochura.com/work/kochura-deploy",
+  "topics": [
+    "deployment",
+    "devops",
+    "docker",
+    "linux",
+    "backend",
+    "infrastructure",
+    "portfolio"
+  ]
+}

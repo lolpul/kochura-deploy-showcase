@@ -1,9 +1,12 @@
 # Kochura Deploy
 
-**Product engineering / Backend / Linux infrastructure**
+Product website and beta-application API for a planned deployment platform.
+
+[Portfolio case study](https://elisey.kochura.com/work/kochura-deploy) · [Portfolio](https://elisey.kochura.com) · [Live beta website](https://deploy.kochura.com)
+
 An engineering overview by [Elisey Kochura](https://github.com/lolpul).
 
-## Project overview
+## Overview
 
 Kochura Deploy explores a simpler way for small teams to deploy and operate bots and small applications. Its current implementation is a product website and a working beta-application API: a focused first step toward understanding requirements before building a deployment platform.
 
@@ -52,6 +55,14 @@ The private project includes API tests for persistence, invalid input, schema mi
 ## Screenshots
 
 No screenshots are included in this edition. The illustration above is a conceptual architecture diagram, not a product UI mockup. The public landing page is linked below.
+
+## Stack
+
+Python · FastAPI · SQLite · Docker · Linux · HTML/CSS/JavaScript
+
+## Current status
+
+Beta onboarding and product validation. Automated deployment, dashboard and billing remain planned.
 
 ## Source availability
 
