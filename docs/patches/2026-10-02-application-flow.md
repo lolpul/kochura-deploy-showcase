@@ -15,3 +15,7 @@ The complete publication inventory and manual diff were reviewed. No confidentia
 ## Rollback and limits
 
 Original main: `4a8328af150e42e7d2efd41d8e2cb1b3fb4cc3ea`. A timestamped ignored backup and target manifest cover changed documentation, ignore rules, metadata, and the vault note. Use a normal revert for rollback. The service's acceptance boundary is demonstrative: in-memory records disappear on restart, and a crash after save before response can cause ambiguous retries. No external messages, production services, networking configuration, or private repository were changed.
+
+## Publication acceptance
+
+Implementation `b71bd6c970f632a0d72be0d5faf83233f5dd9ca5` pushed to public main. [Actions 37050417640](https://github.com/lolpul/kochura-deploy-showcase/actions/runs/37050417640) passed both Python 3.12 and 3.14 jobs with 14 tests, warnings-as-errors, compile checks, and dependency consistency.
