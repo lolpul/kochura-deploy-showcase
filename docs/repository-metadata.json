@@ -1,5 +1,5 @@
 {
-  "description": "Public engineering overview of Kochura Deploy: a beta website/API for a planned deployment platform for bots and small applications.",
+  "description": "Independent Python/FastAPI validation, persistence and notification example with failure-path tests.",
   "homepage": "https://elisey.kochura.com/work/kochura-deploy",
   "topics": [
     "deployment",

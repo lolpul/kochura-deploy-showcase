@@ -1,17 +1,13 @@
-# Showcase documentation memory — v3
+# Application showcase memory - v4
 
-- Purpose: public engineering overview of Kochura Deploy, with independently written prose and a conceptual diagram.
-- Canonical content: [README](../README.md) and [architecture illustration](architecture.svg).
-- Scope: documentation only. Application source and operational configuration remain private.
-- Stage constraint: Current scope is a product site and beta-application API; deployment automation is planned.
-- Publication checks: review every tracked file; permit only this documentation set; check for sensitive values, private URLs, identifying user data, source code and infrastructure details.
-- Screenshots: none included or cleared for this edition.
-- Links: portfolio and case study are published and verified over trusted HTTPS; README now links to both.
-- Last verified: homepage and case study HTTP 200 on 2026-10-01; links added only after publication. No product source or operational information added.
-- Maintenance: keep claims tied to confirmed project evidence, preserve the private-source boundary and review future changes before push.
-- Record: [initial overview](patches/2026-10-01-public-overview.md).
-- Update: [published portfolio links](patches/2026-10-01-portfolio-links.md).
-
-- Profile integration: README opens with a one-line summary and public backlinks; explicit Stack and Current status sections. Repository description/homepage/topics are recorded in `repository-metadata.json`.
-- Profile: https://github.com/lolpul; original source remains private.
-- Latest patch: [public profile coherence](patches/2026-10-01-profile-coherence.md).
+- Purpose: independent Python/FastAPI application flow alongside the beta-onboarding overview.
+- Repository: https://github.com/lolpul/kochura-deploy-showcase. Private product remains private; deployment platform features remain planned.
+- Entry: examples/application-flow/app/service.py; models/repository/notifier/main adjacent; tests/test_flow.py exercises boundaries and HTTP behavior.
+- Contracts: validate -> save -> notify; expected delivery failure preserves acceptance; storage failure skips notification; unexpected errors propagate.
+- Fakes: immutable Pydantic values, locked process-local storage and notification numbers. Restart loses data; no external delivery, retries, deduplication, or customer fields.
+- Commands: python -m pip install -r requirements.txt; python -m pip check; python -m compileall -q examples/application-flow/app; python -m pytest.
+- CI: .github/workflows/python.yml tests Python 3.12/3.14. Top-level dependencies pinned independently.
+- Audit: confirmed generic concepts; no source, business data, configuration, integration, naming, or history transfer. Receipts/backups ignored.
+- Active step: local tests, confidentiality inventory/manual diff, publication, exact-revision CI acceptance.
+- Docs: [scope](spec.md), [interview notes](interview-notes.md), [patch](patches/2026-10-02-application-flow.md).
+- Portfolio: https://elisey.kochura.com/work/kochura-deploy; site integration follows three published showcases.
