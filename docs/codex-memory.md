@@ -1,14 +1,14 @@
-# Application showcase memory - v4
+# Project memory — v5, 2026-10-10
 
-- Purpose: independent Python/FastAPI application flow alongside the beta-onboarding overview.
-- Repository: https://github.com/lolpul/kochura-deploy-showcase. Private product remains private; deployment platform features remain planned.
-- Entry: examples/application-flow/app/service.py; models/repository/notifier/main adjacent; tests/test_flow.py exercises boundaries and HTTP behavior.
-- Contracts: validate -> save -> notify; expected delivery failure preserves acceptance; storage failure skips notification; unexpected errors propagate.
-- Fakes: immutable Pydantic values, locked process-local storage and notification numbers. Restart loses data; no external delivery, retries, deduplication, or customer fields.
-- Commands: python -m pip install -r requirements.txt; python -m pip check; python -m compileall -q examples/application-flow/app; python -m pytest.
-- CI: .github/workflows/python.yml tests Python 3.12/3.14. Top-level dependencies pinned independently.
-- Audit: confirmed generic concepts; no source, business data, configuration, integration, naming, or history transfer. Receipts/backups ignored.
-- Verified: 14 tests pass on Windows Python 3.14.4 and Linux Python 3.12/3.14, warnings-as-errors; compileall and pip check pass. [Actions 37050417640](https://github.com/lolpul/kochura-deploy-showcase/actions/runs/37050417640) accepted implementation b71bd6c970f632a0d72be0d5faf83233f5dd9ca5.
-- Next: Kotlin showcase, then profile and portfolio integration. Publication inventory and manual confidentiality review passed.
-- Docs: [scope](spec.md), [interview notes](interview-notes.md), [patch](patches/2026-10-02-application-flow.md).
-- Portfolio: https://elisey.kochura.com/work/kochura-deploy; site integration follows three published showcases.
+- Purpose: Independent FastAPI flow, injected repository/notifier, strict models; in-memory sample.
+- Repository: https://github.com/lolpul/kochura-deploy-showcase, PUBLIC, main; review branch portfolio-review-2026-10-10. Use git log/PR for delivery SHA.
+- Entry: README Review in 30 seconds → key implementation files/tests; existing architecture and deeper decisions retained.
+- Run/test commands: README and [dated verification](verification.md), checked during this review.
+- Verified: 14 tests, pip check, compileall and loopback HTTP start; exact Actions checks tracked on the PR.
+- Limits: No durable storage/idempotency/outbox/auth/real messaging.
+- Changes: review navigation, honest maturity/validation wording, reproducible demonstration notes and this compact memory. Application algorithms/tests/workflows unchanged; 3D package description corrected to MVP.
+- Existing public portfolio integration was accepted 2026-10-02; no site deployment or production/network change in this review.
+- IP: no private original files/history, configuration, identifiers or working data transferred. New code/visibility/license/history changes require separate owner decision.
+- Backup: central ignored career-materials/.backups/github-review-20261010-015431 manifest; published-doc rollback via ordinary revert; unrelated files preserved.
+- Next: use these source/test paths for interviews; address documented integration/security/rights gaps through separate scoped work.
+- Patch: [portfolio review](patches/2026-10-10-portfolio-review.md).

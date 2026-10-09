@@ -2,6 +2,10 @@
 
 An independent Python/FastAPI example of validating an application, storing it, and reporting notification delivery separately from acceptance.
 
+## Review in 30 seconds
+
+The engineering question is what a successful response means when storage succeeds but delivery fails. Start with [the service](examples/application-flow/app/service.py), [input/output models](examples/application-flow/app/models.py) and [the HTTP adapter](examples/application-flow/app/main.py); follow [failure-ordering tests](examples/application-flow/tests/test_flow.py). [Latest local verification and demo](docs/verification.md) records what was actually run.
+
 ## What this demonstrates
 
 Pydantic validation, a small service layer, repository and notifier protocols, typed boundary errors, and tests of failure ordering. The private product currently has a website and beta-application API; automated deployment, dashboard, and billing remain planned.
